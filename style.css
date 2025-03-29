@@ -1,0 +1,163 @@
+/* 🎨 พื้นหลังแบบ Gradient & ฟอนต์สวยๆ */
+body {
+    font-family: 'Prompt', sans-serif;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 🎀 ส่วนหัวของเว็บ */
+header {
+    background: linear-gradient(to right, #ff80ab, #ffb6c1);
+    padding: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 📌 เมนูหลัก */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 12px 25px;
+    background: #ffcccb;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #ff4081;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
+}
+
+/* 📸 รูปโปรไฟล์ */
+.profile img {
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 25px;
+    border: 5px solid #ff80ab;
+}
+
+/* 🏷 เมนูงาน (โปรเจกต์) */
+.work-menu, .projects-menu {
+    margin-top: 40px;
+}
+
+.work-menu ul, .projects-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.work-menu li, .projects-menu li {
+    display: inline-block;
+    margin: 15px;
+}
+
+.work-menu a, .projects-menu a {
+    text-decoration: none;
+    padding: 18px 30px;
+    background: #ffe4e1;
+    border-radius: 20px;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.work-menu a:hover, .projects-menu a:hover {
+    background: #ff80ab;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 128, 171, 0.3);
+}
+
+/* 🖼 ส่วนแสดงโปรเจกต์ */
+.gallery {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.work-item {
+    display: inline-block;
+    width: 320px;
+    margin: 20px;
+    background: #ffddf4;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.work-item img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.work-item p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0;
+    color: #ff4081;
+}
+
+/* 🎀 ปุ่มกด */
+.work-item a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #ff80ab;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.work-item a:hover {
+    background: #ff4081;
+    box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
+}
+
+/* 📌 Responsive - รองรับมือถือ */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .work-item {
+        width: 90%;
+    }
+}
+.work-menu img {
+    display: block; /* จัดให้อยู่กึ่งกลาง */
+    max-width: 90%; /* ปรับขนาดให้เหมาะสม */
+    height: auto; /* รักษาสัดส่วนของรูป */
+    margin: 20px auto; /* กึ่งกลางรูป */
+    border-radius: 15px; /* ทำมุมโค้งสวยงาม */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
