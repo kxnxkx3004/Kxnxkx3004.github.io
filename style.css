@@ -190,3 +190,24 @@ nav ul li a:hover {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* 📌 จัดตัวหนังสือที่อยู่นอกกรอบให้อยู่ตรงกลางและอยู่เหนือกรอบ */
+.center-text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    position: relative;
+    top: -10px;
+}
+
+/* 📌 ปรับตำแหน่งข้อความภายใน .work-item ให้อยู่นอกกรอบแต่ยังอยู่ตรงกลาง */
+.work-item p {
+    position: relative;
+    top: -20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ff4081;
+}
